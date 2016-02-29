@@ -1,8 +1,8 @@
 # OpenFin Application window closing example
 
-This demonstates minimizing and 
+This demonstrates minimizing and restoring of windows. The child windows are separate Applications, instantiated in a minimised form. Due to the asynchronous nature of the code the Application windows, generated on-the-fly are returned via a Promise.
 
-This is a vanilla JavaScript app seed for developing OpenFin apps. It is free from frameworks and build systems, though you may add them as you see fit.
+This is a vanilla JavaScript app, free from frameworks and build systems.
 
 It has a simple Node/Express server for local development.
 
