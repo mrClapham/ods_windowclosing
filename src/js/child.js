@@ -22,7 +22,7 @@ initChildWithOpenFin = function(){
 
   _childApp.addEventListener("restored", function (event) {
     console.log("The window has been moved or restored");
-    _childApp.setBounds(0, 0, 1000, 1000, function () {
+    _childApp.setBounds(0, 0, 500, 500, function () {
     }, function () {
       console.log("The registration was successful");
     }, function (reason) {

@@ -5,6 +5,7 @@
     "description": "windowclosing",
     "url": "http://localhost:3030",
     "uuid": "openfin-closing-events-demo",
+    "alwaysOnTop": true,
     "autoShow": true
   },
   "runtime": {

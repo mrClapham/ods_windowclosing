@@ -23,12 +23,18 @@ function initWithOpenFin(){
         minAll()
     });
 
+    document.querySelector("#restore-btt").addEventListener('click', function(e){
+        restorAll()
+    });
+
+
+
     document.querySelector("#max-btt").addEventListener('click', function(e){
         maxAll();
     });
 
     _mainWin.addEventListener('close-requested', function(e) {
-        var challenge = confirm('are you sure?');
+        var challenge = confirm('are you sure? This will terminate all child applications.');
         if (challenge == true) {
             terminateAllApps();
             _mainWin.close(true);
@@ -82,9 +88,15 @@ function minAll(){
     }
 }
 
-function maxAll(){
+function restorAll(){
     for(var app in apps ){
         apps[app].getWindow().restore();
+    }
+}
+
+function maxAll(){
+    for(var app in apps ){
+        apps[app].getWindow().maximize();
     }
 }
 
@@ -99,7 +111,7 @@ function initNewApp(uuid){
                 name: "BGC IRO Volume Match",
                 autoShow: false,
                 defaultCentered: true,
-                alwaysOnTop: true,
+                alwaysOnTop: false,
                 state: "minimized",
                 windowState: "minimized",
                 saveWindowState: false,

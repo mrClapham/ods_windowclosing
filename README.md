@@ -1,4 +1,7 @@
 # OpenFin Application window closing example
+
+This demonstates minimizing and 
+
 This is a vanilla JavaScript app seed for developing OpenFin apps. It is free from frameworks and build systems, though you may add them as you see fit.
 
 It has a simple Node/Express server for local development.
